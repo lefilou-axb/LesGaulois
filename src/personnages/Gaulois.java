@@ -10,4 +10,8 @@ public class Gaulois {
 	}
 	
 	public String getNom() {return nom;}
+	
+	public static void main(String[] args) {
+		
+	}
 }
