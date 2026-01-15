@@ -1,6 +1,6 @@
 package personnages;
 
-public class Personnage {
+public abstract class Personnage {
 	private String nom;
 	private int force;
 	
@@ -9,10 +9,7 @@ public class Personnage {
 		this.force = force;
 	}
 	
-	protected String donnerAuteur() {
-		String typePersonnage ="";
-		return typePersonnage;
-	}
+	protected abstract String donnerAuteur();
 	
 	public String getNom() {return nom;}
 	
