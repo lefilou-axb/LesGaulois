@@ -12,7 +12,13 @@ public class Romain {
 	public String getNom() {return nom;}
 	
 	public void recevoirCoup(int coup) {
-		
+		this.force = force - coup;
+		if(force <= 0) {
+			this.force = 0;
+			parler("J'abandonne...");
+		} else {
+			parler("Aïe !");
+		}
 	}
 	
 	public void parler(String phrase) {
