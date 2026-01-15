@@ -18,6 +18,9 @@ public class TestGaulois {
 		
 		for(int i=0; i<3;i++) {
 			asterix.frapper(minus);
+			if(i<2) {
+				minus.frapper(asterix);
+			}
 		}
 	}
 }
