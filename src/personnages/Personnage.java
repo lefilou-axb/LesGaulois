@@ -13,6 +13,8 @@ public abstract class Personnage {
 	
 	public String getNom() {return nom;}
 	
+	public int getForce() {return force;}
+	
 	public void parler(String phrase) {
 		System.out.println("Le " + donnerAuteur() + " " + getNom() +" : << " + phrase + " >>.");
 	}
