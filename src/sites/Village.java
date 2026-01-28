@@ -2,11 +2,20 @@ package sites;
 
 import personnages.Gaulois;
 
-public class Village extends Gaulois {
-	private String chef;
+public class Village{
+	private Gaulois chef;
+	private Gaulois villageois[];
+	private int indiceTab = 0;
 	
-	public Village(String nom, int force) {
-		super(nom, force);
-		this.chef = "Chef";
+	public Village(Gaulois chef) {
+		this.chef = chef;
 	}
+	
+	public Gaulois getChef() {return chef;}
+	
+	public void ajouterVillageois(Gaulois newSoldat){
+		this.villageois[this.indiceTab] = newSoldat;
+		System.out.println(this.villageois);
+	}
+	
 }

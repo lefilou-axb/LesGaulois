@@ -1,11 +1,20 @@
 package sites;
 
+import personnages.Gaulois;
+import personnages.Grade;
 import personnages.Soldat;
 
-public class Camp extends Soldat{
-	private String commandant;
+public class Camp{
+	private Soldat commandant;
 	
-	public Camp(String nom, int force, String grade){
-		super(nom, force, grade);
+	public Camp(Soldat commandant){
+		this.commandant = commandant;
 	}
+	
+	Soldat getCommandant(){return commandant;}
+	
+public void ajouterSoldat(Gaulois newSoldat){
+		
+	}
+
 }
